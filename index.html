@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Website | CV Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" />
+  <style>
+    body {
+      background-color: #f4f6f9;
+      color: #343a40;
+      font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .main-header {
+      background-color: #343a40;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-header h1 {
+      font-size: 1.1rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .content-wrapper {
+      padding: 1.25rem;
+    }
+
+    .card {
+      border: 1px solid #dee2e6;
+      border-radius: 0.25rem;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1.25rem;
+    }
+
+    .card-primary {
+      border-top: 3px solid #007bff;
+    }
+
+    .card-success {
+      border-top: 3px solid #28a745;
+    }
+
+    .card-header {
+      background-color: #fff;
+      border-bottom: 1px solid #dee2e6;
+      padding: 0.75rem 1rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .meta-item {
+      color: #6c757d;
+      margin-bottom: 0.4rem;
+      font-size: 0.94rem;
+    }
+
+    .timeline-item {
+      border-left: 2px solid #dee2e6;
+      padding-left: 1rem;
+      margin-left: 0.4rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .timeline-item:before {
+      content: "";
+      position: absolute;
+      width: 0.65rem;
+      height: 0.65rem;
+      background: #007bff;
+      border-radius: 50%;
+      left: -0.43rem;
+      top: 0.2rem;
+    }
+
+    .timeline-title {
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      color: #6c757d;
+      margin-bottom: 0.4rem;
+    }
+
+    .skill-badge {
+      margin-right: 0.35rem;
+      margin-bottom: 0.35rem;
+      font-weight: 500;
+    }
+
+    .footer {
+      padding: 0.75rem 1.25rem 1.2rem;
+      text-align: right;
+      font-size: 0.86rem;
+      color: #6c757d;
+    }
+
+    @media (max-width: 767.98px) {
+      .content-wrapper {
+        padding: 1rem 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header d-flex justify-content-between align-items-center">
+    <h1><i class="fas fa-user-tie mr-2"></i>Personal CV Dashboard</h1>
+    <button class="btn btn-sm btn-outline-light">Download CV</button>
+  </header>
+
+  <main class="content-wrapper container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <section class="card card-primary">
+          <div class="card-header">
+            <h2 class="card-title">Profile</h2>
+          </div>
+          <div class="card-body">
+            <h4 class="mb-2">CV Owner</h4>
+            <div class="meta-item"><i class="fas fa-briefcase mr-2"></i>Doctoral student</div>
+            <div class="meta-item"><i class="fas fa-map-marker-alt mr-2"></i>Location not specified</div>
+            <div class="meta-item"><i class="fas fa-envelope mr-2"></i>Email not specified</div>
+            <div class="meta-item"><i class="fas fa-phone mr-2"></i>Phone not specified</div>
+            <p class="mb-0 mt-3">Current position: Doctoral student.</p>
+          </div>
+        </section>
+
+        <section class="card card-success">
+          <div class="card-header">
+            <h2 class="card-title">Skills</h2>
+          </div>
+          <div class="card-body">
+            <span class="badge badge-primary skill-badge">11111</span>
+            <span class="badge badge-primary skill-badge">22222</span>
+          </div>
+        </section>
+
+        <section class="card card-primary">
+          <div class="card-header">
+            <h2 class="card-title">Links</h2>
+          </div>
+          <div class="card-body">
+            <a href="#" class="btn btn-primary btn-sm mb-2 mr-2"><i class="fab fa-linkedin mr-1"></i>LinkedIn</a>
+            <a href="#" class="btn btn-success btn-sm mb-2 mr-2"><i class="fab fa-github mr-1"></i>GitHub</a>
+            <a href="#" class="btn btn-secondary btn-sm mb-2"><i class="fas fa-paper-plane mr-1"></i>Contact</a>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-lg-8">
+        <section class="card card-primary">
+          <div class="card-header">
+            <h2 class="card-title">Work Experience</h2>
+          </div>
+          <div class="card-body">
+            <div class="timeline-item">
+              <div class="timeline-title">Current Position</div>
+              <div class="timeline-date">Present</div>
+              <ul>
+                <li>Doctoral student.</li>
+              </ul>
+            </div>
+            <div class="timeline-item mb-0">
+              <div class="timeline-title">Professional Notes</div>
+              <div class="timeline-date">From CV</div>
+              <ul class="mb-0">
+                <li>my first project is prompt enginering skill</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card card-success">
+          <div class="card-header">
+            <h2 class="card-title">Education</h2>
+          </div>
+          <div class="card-body">
+            <div class="timeline-item">
+              <div class="timeline-title">Doctoral Program</div>
+              <div class="timeline-date">In progress</div>
+              <p class="mb-0">Degree details not specified in the CV file.</p>
+            </div>
+            <div class="timeline-item mb-0">
+              <div class="timeline-title">Additional Education</div>
+              <div class="timeline-date">Not provided</div>
+              <p class="mb-0">Add more education history in <code>myinfo.md</code> when available.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card card-primary">
+          <div class="card-header">
+            <h2 class="card-title">Projects & Achievements</h2>
+          </div>
+          <div class="card-body">
+            <ul class="mb-0">
+              <li>my first project is prompt enginering skill</li>
+              <li>Professional skill reference: 11111</li>
+              <li>Professional skill reference: 22222</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    Last updated: March 6, 2026
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
